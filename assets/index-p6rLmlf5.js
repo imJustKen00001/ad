@@ -200,7 +200,7 @@
         </figcaption>
 
 
-        <img src="/assets/img/company.png" alt="company image" class="main-about__img"
+        <img src="/ad/assets/img/company.png" alt="company image" class="main-about__img"
         </figure>
 
       </section>
@@ -219,7 +219,7 @@
 
   `}function F(t){return`
       <div class="swiper-slide brands-menu__item">
-              <img src="/assets/logos/Bitmap-${t}.svg" alt="brand logo image" class="brands-menu__brand-img">
+              <img src="/ad/assets/logos/Bitmap-${t}.svg" alt="brand logo image" class="brands-menu__brand-img">
               ${Pe("brands-menu__button")}
           </div>
 
