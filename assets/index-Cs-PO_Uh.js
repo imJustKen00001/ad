@@ -11,7 +11,7 @@
 
   `}function Le(t,e,i){return`
       <div class="${t} ${e} ${i} logo">
-          <img src="public/assets/logos/logo.svg" alt="logo picture" class="${t}-image logo__image">
+          <img src="/ad/assets/logos/logo.svg" alt="logo picture" class="${t}-image logo__image">
       </div>
   `}function Fe(){return`
   <nav class="nav-menu">
