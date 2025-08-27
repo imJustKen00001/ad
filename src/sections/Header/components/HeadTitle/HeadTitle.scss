@@ -1,0 +1,26 @@
+.services-menu-title {
+  &--blue-line {
+  }
+  &--hidden-small-med {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .services-menu-title {
+    &--blue-line {
+    }
+    &--hidden-small-med {
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services-menu-title {
+    &--blue-line {
+    }
+    &--hidden-small-med {
+      display: flex;
+    }
+  }
+}

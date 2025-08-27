@@ -1,0 +1,23 @@
+.read-more-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+  width: 132px;
+  height: 24px;
+  &:hover {
+    cursor: pointer;
+    filter: opacity(0.5);
+  }
+  &--blue-arrow::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url("@assets/icons/arrow.svg") no-repeat center;
+    transition: all 0.3s;
+  }
+  &--blue-arrow-rotate::before {
+    rotate: 180deg;
+  }
+}

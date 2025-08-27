@@ -1,0 +1,36 @@
+.send-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 32px;
+  min-width: 119px;
+  max-width: 136px;
+  color: white;
+  background-color: $pink;
+  border: 1px solid $pink;
+  border-radius: 16px;
+  transition: all 0.3s;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-align: right;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    color: $pink;
+
+    svg {
+      fill: $pink;
+    }
+  }
+
+  svg {
+    transition: all 0.3s;
+    fill: white;
+  }
+}

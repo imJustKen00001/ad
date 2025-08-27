@@ -1,0 +1,39 @@
+@use "./ressetStyles.scss";
+@use "./fonts.scss";
+@use "./variables.scss" as *;
+@use "./animations.scss";
+@use "./mixins.scss";
+
+body {
+}
+.container {
+  font-family: "TT Lakes";
+  box-sizing: border-box !important;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    grid-template-areas:
+      "aside header"
+      "aside main"
+      "aside footer";
+  }
+  header {
+    grid-area: header;
+  }
+  aside {
+    grid-area: aside;
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}

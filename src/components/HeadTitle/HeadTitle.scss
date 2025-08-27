@@ -1,0 +1,44 @@
+.head-title {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  &-text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+  }
+
+  &--blue-line::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 40px;
+    margin-right: 16px;
+    background-color: $blue;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .head-title {
+    &-text {
+    }
+
+    &--blue-line::before {
+      margin-right: 24px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .head-title {
+    &-text {
+    }
+
+    &--blue-line::before {
+      margin-right: 32px;
+    }
+  }
+}

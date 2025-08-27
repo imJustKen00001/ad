@@ -1,0 +1,262 @@
+.services-price-menu {
+  padding-top: 40px;
+  &__title {
+  }
+  &__labels {
+    &--hidden-small {
+      display: none;
+    }
+  }
+
+  &__label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+    &--hidden-med-large {
+    }
+    &--name {
+    }
+    &--price {
+    }
+    &--time {
+    }
+  }
+  &__box,
+  .swiper {
+    padding-top: 16px;
+    padding-left: 8px;
+    max-width: 1120px;
+  }
+  &__list,
+  .swiper-wrapper {
+    padding-bottom: 44px;
+  }
+  &__item,
+  .swiper-slide {
+    padding: 16px;
+    background-color: white;
+    border-radius: 6px;
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "price price"
+      "time  button";
+    gap: 16px;
+  }
+  &__title-block {
+    grid-area: title;
+  }
+  &__price-block {
+    grid-area: price;
+  }
+  &__time-block {
+    grid-area: time;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+  }
+
+  &__send-button {
+    margin-left: auto;
+    margin-top: auto;
+    grid-area: button;
+  }
+  &__pagination,
+  .swiper-pagination {
+    --swiper-pagination-top: 190px;
+    height: 20px;
+
+    &-bullet {
+      @include pagination-bullets;
+    }
+  }
+
+  &__footer {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  &__about {
+    max-width: 421px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 24px;
+  }
+  &__link-button {
+    display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 200px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.479);
+      cursor: pointer;
+
+      svg {
+        color: #fb014c;
+      }
+    }
+
+    svg {
+      position: absolute;
+      bottom: 4.3px;
+      right: 75px;
+      line-height: 10px;
+      transition: all 0.3s;
+
+      color: $pink;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services-price-menu {
+    &__title {
+    }
+    &__labels {
+      padding: 0 16px;
+      gap: 20px;
+      &--hidden-small {
+        display: flex;
+      }
+    }
+    &__label {
+      &--hidden-med-large {
+        display: none;
+      }
+      &--name {
+        width: 270px;
+      }
+      &--price {
+        margin-left: auto;
+        width: 60px;
+      }
+      &--time {
+        margin-right: 140px;
+        width: 60px;
+      }
+    }
+    &__box,
+    .swiper {
+      padding: 32px 24px 0;
+    }
+    &__list,
+    .swiper-wrapper {
+      box-sizing: border-box !important;
+      display: grid;
+      background-color: white;
+      margin-top: 16px;
+      padding: 0 16px;
+      border-radius: 10px;
+    }
+    &__item,
+    .swiper-slide {
+      border-radius: 0;
+      padding: 24px 0;
+      gap: 20px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #eaeaea;
+      &:last-child {
+        border: none;
+      }
+    }
+    &__title-block {
+      width: 270px;
+    }
+    &__price-block {
+      margin-left: auto;
+      width: 60px;
+    }
+    &__time-block {
+      width: 60px;
+    }
+    &__text {
+    }
+    &__send-button {
+      margin-left: 0;
+    }
+    &__pagination,
+    .swiper-pagination {
+      &-bullet {
+      }
+    }
+
+    &__footer {
+      padding: 24px 24px 0;
+    }
+    &__about {
+    }
+    &__link-button {
+      width: 390px;
+      gap: 8px;
+
+      svg {
+        position: unset;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .services-price-menu {
+    padding-top: 50px;
+    &__title {
+    }
+    &__box,
+    .swiper {
+      padding: 32px 32px 0;
+    }
+    &__list,
+    .swiper-wrapper {
+    }
+    &__item,
+    .swiper-slide {
+    }
+    &__title-block {
+    }
+    &__price-block {
+    }
+    &__time-block {
+    }
+    &__label {
+    }
+    &__text {
+    }
+    &__send-button {
+    }
+    &__pagination,
+    .swiper-pagination {
+      &-bullet {
+      }
+    }
+    &__footer {
+      padding: 32px 32px 0;
+    }
+    &__about {
+    }
+    &__link-button {
+      width: 390px;
+      gap: 8px;
+
+      svg {
+        position: unset;
+      }
+    }
+  }
+}

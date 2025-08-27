@@ -1,0 +1,11 @@
+.burger-menu-button {
+  background-image: url("@assets/icons/burgerMenu.svg");
+}
+
+@media (min-width: 1440px) {
+  .burger-menu-button {
+    &--hidden-large {
+      display: none;
+    }
+  }
+}
