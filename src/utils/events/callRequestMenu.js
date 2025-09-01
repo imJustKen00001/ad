@@ -1,9 +1,10 @@
 export default function supportMenuAction() {
   const callRequestMenu = document.querySelector(".call-request-menu");
+  const container = document.querySelector(".call-request-menu__container");
   const sideMenu = document.querySelector(".side-menu");
   const requestBtn = sideMenu.querySelector(".side-menu__button--call");
   const requestBtn2 = document.querySelector(".nav-menu__item--call");
-  const closeBtn = callRequestMenu.querySelector(
+  const closeBtn = callRequestMenu.querySelectorAll(
     ".call-request-menu__button--close"
   );
   const form = callRequestMenu.querySelector(
@@ -14,17 +15,20 @@ export default function supportMenuAction() {
     event.preventDefault();
   });
 
+  const scrollBlock = function (e) {
+    e.preventDefault();
+    container.scrollTop += e.deltaY;
+  };
+
   const showMenu = function () {
+    window.addEventListener("wheel", scrollBlock, { passive: false });
     callRequestMenu.style.display = "block";
     callRequestMenu.classList.remove("call-request-menu--hidden");
     callRequestMenu.classList.add("call-request-menu--show");
     callRequestMenu.style.display = "block";
-    if (window.innerWidth < 1440) {
-      sideMenu.classList.remove("side-menu--show");
-      sideMenu.classList.add("side-menu--hidden");
-    }
   };
   const closeMenu = function () {
+    window.removeEventListener("wheel", scrollBlock, { passive: false });
     callRequestMenu.classList.remove("call-request-menu--show");
     callRequestMenu.classList.add("call-request-menu--hidden");
     callRequestMenu.addEventListener("animationend", () => {
@@ -38,5 +42,7 @@ export default function supportMenuAction() {
   });
   requestBtn.addEventListener("click", () => showMenu());
   requestBtn2.addEventListener("click", () => showMenu());
-  closeBtn.addEventListener("click", () => closeMenu());
+  closeBtn.forEach((btn) => {
+    btn.addEventListener("click", () => closeMenu());
+  });
 }

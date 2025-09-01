@@ -3,18 +3,17 @@
   }
 
   &--grey-line::before {
-    content: "";
-    display: none;
-    width: 2px;
-    height: 32px;
-    background-color: #eaeaea;
-    margin-right: 20px;
   }
 }
 @media (min-width: 768px) {
   .header__logo {
     &--grey-line::before {
-      display: inline-block;
+      content: "";
+      display: block;
+      width: 2px;
+      height: 32px;
+      background-color: #eaeaea;
+      margin-right: 20px;
     }
   }
 }

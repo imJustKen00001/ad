@@ -4,8 +4,10 @@ import { devicesRepairMenuSlider } from "./devicesRepairMenuSlider.js";
 import { servicesPriceMenuSlider } from "./servicesPriceMenuSlider.js";
 
 export default function swipersInit() {
-  servicesMenuSlider();
-  brandsMenuSlider();
-  devicesRepairMenuSlider();
-  servicesPriceMenuSlider();
+  document.addEventListener("DOMContentLoaded", () => {
+    servicesMenuSlider();
+    brandsMenuSlider();
+    devicesRepairMenuSlider();
+    servicesPriceMenuSlider();
+  });
 }

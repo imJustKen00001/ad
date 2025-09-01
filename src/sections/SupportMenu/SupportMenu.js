@@ -6,8 +6,17 @@ import SendButton from "@components/SendButton/SendButton";
 export default function SupportMenu() {
   return `
       <aside class="support-menu support-menu--hidden">
+      ${Button(
+        "support-menu__button",
+        "support-menu__button--close",
+        "support-menu__button--hidden-small"
+      )}
       <div class="support-menu__container">
-        ${Button("support-menu__button", "support-menu__button--close")}
+        ${Button(
+          "support-menu__button",
+          "support-menu__button--close",
+          "support-menu__button--hidden-large"
+        )}
         <h2 class="support-menu__title support-menu__title--blue-line">
           Обратная связь
         </h2>
@@ -17,8 +26,7 @@ export default function SupportMenu() {
           ${SupportMenuInput("tel")}
           ${SupportMenuInput("email")}
 
-          <textarea class="support-menu__input support-menu__input--message" placeholder="Сообщение">
-          </textarea>
+          <textarea class="support-menu__input support-menu__input--message" placeholder="Сообщение"></textarea>
 
           <p class="support-menu__about-policy">
           Нажимая “отправить”, вы даете согласие на

@@ -1,7 +1,6 @@
 export default function actionMenu(menuClass, btnClass, hideClass) {
   const menu = document.querySelector(`.${hideClass}`);
   const btn = document.querySelector(`.${btnClass}`);
-  console.log(btn);
 
   btn.addEventListener("click", () => {
     if (menu.classList.contains(hideClass)) {

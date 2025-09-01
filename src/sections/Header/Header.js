@@ -3,6 +3,7 @@ import HeadTitle from "@components/HeadTitle/HeadTitle.js";
 import "./components/HeadTitle/HeadTitle.scss";
 import Button from "@components/Button/Button.js";
 import Logo from "@components/Logo/Logo.js";
+import "./components/HeaderLogo/HeaderLogo.scss";
 import NavMenu from "./components/NavMenu/NavMenu.js";
 
 export default function Header() {

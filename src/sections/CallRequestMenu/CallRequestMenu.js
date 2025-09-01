@@ -5,10 +5,16 @@ import SendButton from "@components/SendButton/SendButton.js";
 export default function CallRequestMenu() {
   return `
       <aside class="call-request-menu">
+        ${Button(
+          "call-request-menu__button",
+          "call-request-menu__button--close",
+          "call-request-menu__button--hidden-small"
+        )}
       <div class="call-request-menu__container">
         ${Button(
           "call-request-menu__button",
-          "call-request-menu__button--close"
+          "call-request-menu__button--close",
+          "call-request-menu__button--hidden-large"
         )}
         <h2 class="call-request-menu__title call-request-menu__title--blue-line">
             Заказать звонок

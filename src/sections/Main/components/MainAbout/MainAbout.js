@@ -28,7 +28,7 @@ export default function MainAbout() {
         </figcaption>
 
 
-        <img src="/assets/img/company.png" alt="company image" class="main-about__img"
+        <img src="/ad/assets/img/company.png" alt="company image" class="main-about__img"
         </figure>
 
       </section>

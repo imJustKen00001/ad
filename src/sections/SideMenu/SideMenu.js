@@ -33,12 +33,13 @@ export default function SideMenu() {
           </div>
 
           <div class="side-menu__footer">
-            <p class="side-menu__email">
-                mail@cps.com
-            </p>
-            <p class="side-menu__number">
-                8 800 890 8900
-            </p>
+            <a href="mailto:mail@cps.com" class="side-menu__email">
+            mail@cps.com
+            </a>
+
+            <a href="tel:88008908900" class="side-menu__number">
+            8 800 890 8900
+            </a>
             <div class="side-menu__lang-change">
                 <p class="side-menu__lang side-menu__lang--ru side-menu__lang--active"> ru</p>
                 <p class="side-menu__lang side-menu__lang--en">en </p>
